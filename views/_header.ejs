@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<header> 
+    <!-- Page Header -->
+
+    <!-- <ul>
+        <% if(locals.user){ %>
+            <li>
+                <a href="/users/profile">  <%= user.name %> </a>
+             </li>
+
+            <li>
+                <a href="/users/sign-out"> Sign Out </a>
+            </li>
+        <% } else{ %>
+            <li>
+                <a href="/users/sign-in"> Login/Sign-Up </a>
+            </li>
+             <li>
+                <a href="/users/sign-up"> Sign Up </a>
+            </li>
+        <% } %>
+    </ul> -->
+
+   <div class="header">
+    <% if(locals.user){ %>
+
+        <nav>
+            <ul>
+             <div class="nav-flex">
+              <li>
+                  <a href="/">
+                    <span><img src="/images/c.png" class="c-image"> </span>
+                    <span style="padding-left: 26px;">Codeial</span>
+                </a>
+                </li>
+            </div>
+
+            <div class="nav-flex">
+              <li>
+                <a href="/users/profile/<%= user.id %>">  <%= user.name %> </a>
+             </li>
+    
+             <li>
+                <a href="/users/sign-out"> Sign Out </a>
+            </li>
+        </div>
+
+            </ul>
+          </nav>
+       
+  </div>
+
+     <% } else{ %>
+
+        <div class="header">
+        <nav>
+            <ul>
+                <li>
+                <a href="/">
+                    <span><img src="/images/c.png" class="c-image"> </span>
+                    <span style="padding-left: 26px;">Codeial</span>
+                </a>
+            </li>
+             
+              <li><a href="/users/sign-in">Login / Sign Up</a></li>
+            </ul>
+          </nav>
+    </div>
+     <% } %>
+
+   
+
+</header>

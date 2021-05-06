@@ -1,0 +1,29 @@
+#add-friend
+        {
+            background-color:black;
+            border: 2px solid lightgray;
+            padding:5px;
+            border-radius:10px;
+            text-decoration: none;
+            color:white;
+        
+            &:hover
+            {
+                background-color:red;
+            }
+        }
+
+        #remove-friend
+        {
+            background-color:black;
+            border: 2px solid lightgray;
+            padding:5px;
+            border-radius:10px;
+            text-decoration: none;
+            color:white;
+        
+            &:hover
+            {
+                background-color:red;
+            }
+        }

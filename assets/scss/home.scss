@@ -1,0 +1,40 @@
+#home-container{
+    display: flex;
+    overflow-x: hidden;
+    
+    #feed-posts{
+        width: 70%;
+        padding: 10px;
+        border-right: 1px solid lightgrey;
+        height: 100vh;
+    }
+
+    .list-group{
+        li{
+            position: relative;
+            left:2vw;
+            text-align:left;
+            margin-bottom: 5px;
+        }
+        p{
+            position: relative;
+            left:4vw;
+            text-align:left;
+            margin-bottom: 5px;
+        }
+    }
+    #user-friends{
+        width: 30%;
+        padding: 10px;
+
+        #friends-container{
+            border-bottom: 2px solid lightgrey;
+        }
+      
+    }
+    
+}
+
+#home-container::-webkit-scrollbar {
+    display: none;
+  }

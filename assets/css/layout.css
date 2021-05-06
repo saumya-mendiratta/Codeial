@@ -1,0 +1,11 @@
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body li {
+  color: white; }
+
+body section {
+  height: 100%; }
+  body section main {
+    text-align: center; }
+    body section main #layout-main {
+      height: 100%; }
+    body section main li {
+      list-style: none; }
