@@ -27,7 +27,7 @@ A Social media Web Application with CRUD operations.
   
   * Add/Remove friends
   
-  * One can like posts and commentson the feed
+  * One can like posts and comments on the feed
   
  * Flash Messages:
  
