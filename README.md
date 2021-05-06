@@ -25,7 +25,7 @@ A Social media Web Application with CRUD operations.
 
   * Edit user name and email
   
-  * Add friends
+  * Add/Remove friends
   
   * One can like posts and commentson the feed
   
