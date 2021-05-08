@@ -28,6 +28,8 @@ A Social media Web Application with CRUD operations.
   * Add/Remove friends
   
   * One can like posts and comments on the feed
+ 
+  * Users can chat with their Friends using chatting Engine 
   
  * Flash Messages:
  
