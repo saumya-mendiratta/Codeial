@@ -2,7 +2,12 @@
 <img src="https://img.shields.io/github/issues/saumya-mendiratta/Codeial"> <img src="https://img.shields.io/badge/Dev-InProgress-orange">
 
 
-A Social media Web Application with CRUD operations.
+<h3>A Social media Web Application with CRUD operations</h3>
+<h4>Sample Screesnshot :</h4>
+
+
+![codeial](https://user-images.githubusercontent.com/67758484/117736194-b757b280-b214-11eb-974c-01c8b345d7b0.png)
+
 
 
 ## Features
