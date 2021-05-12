@@ -5,9 +5,7 @@
 <h3>A Social media Web Application with CRUD operations</h3>
 <h4>Sample Screesnshot :</h4>
 
-
-![codeial](https://user-images.githubusercontent.com/67758484/117736194-b757b280-b214-11eb-974c-01c8b345d7b0.png)
-
+<img src="https://github.com/saumya-mendiratta/Codeial/blob/main/assets/images/codeial.gif?raw=true">
 
 
 ## Features
