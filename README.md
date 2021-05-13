@@ -34,6 +34,9 @@
  
   * Users can chat with their Friends using chatting Engine 
   
+ * API:
+     * v1 API is made for adding and deleting the post
+    
  * Flash Messages:
  
      * Flash Messages pop up on sign-in / sign-out
@@ -80,7 +83,9 @@ Some comments in the source code are course notes and therefore might not seem n
 * [express-session](https://github.com/expressjs/session#express-session)
 * [JWT (JsonWebToken)](https://jwt.io/)
 * [Node SASS Middleware](https://www.npmjs.com/package/node-sass)
+* [Noty JS](https://ned.im/noty/#/)
 * [Node Mailer](https://nodemailer.com/about/)
+* [Postman](https://www.postman.com/)
 * [Gulp](https://gulpjs.com/)
 * [Socket.io](https://socket.io/)
 
