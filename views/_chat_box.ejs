@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="<%= assetPath('css/chatbox.css') %>">
+<!-- CHANGE :: Creat the code for chat box -->
+<% if (locals.user){ %>
+
+	<div class="open-button" onclick="openForm()">
+	   <span><img src="<%=locals.user.avatar%>" style="height:35px; width:35px; border-radius:50%; border: 2px solid black;" ></span>
+		<span class="messaging">Messaging</span>
+	</div>
+
+	<div id="user-chat-box">
+		<div class='chat-header'>
+		<span>Messaging</span>
+		<button type="button" class="btn cancel" style="background:white;border:none;" onclick="closeForm()">
+			<!-- Close -->
+			<img src="<%= assetPath('images/close.png') %>" style="width:20px;height:20px;cursor:pointer;">
+		</button>
+		</div>
+		<hr>
+		<ul id="chat-messages-list">
+			<li class="other-message">
+				<span>
+					Hey , how can we help you ?
+				</span>
+				
+			</li>
+			<br>
+			<li class="self-message">
+				<span>
+					I loved this website
+				</span>
+				
+			</li>
+
+		</ul>
+		<div id="chat-message-input-container">
+			<input id="chat-message-input" placeholder="Type message here">
+			<button id="send-message">
+				<!-- Send -->
+				<img src="<%= assetPath('images/send-icon.png') %>">
+			</button>
+		</div>
+
+	</div>
+<% } else {%>
+
+	<div class="open-button" onclick="openForm()">
+		<span><img src="<%= assetPath('images/user.png') %>" style="height:35px; width:35px; border-radius:50%; border: 2px solid black;" ></span>
+		 <span class="messaging">Messaging</span>
+	 </div>
+
+	 <div id="user-chat-box">
+		<div class='chat-header'>
+		<span>Messaging</span>
+		<button type="button" class="btn cancel" style="background:white;border:none;" onclick="closeForm()">
+			<!-- Close -->
+			<img src="<%= assetPath('images/close.png') %>" style="width:20px;height:20px;cursor:pointer;">
+		</button>
+		</div>
+		<hr>
+		<ul id="chat-messages-list">
+			<li class="other-message">
+				<span>
+					Hey , how can we help you ?
+				</span>
+				
+			</li>
+			<br>
+			<li class="self-message">
+				<span>
+					I loved this website
+				</span>
+				
+			</li>
+
+		</ul>
+		<div id="chat-message-input-container">
+			<input id="chat-message-input" placeholder="Type message here">
+			<button id="send-message" onclick="pageRedirect()">
+				<!-- Send -->
+				<img src="<%= assetPath('images/send-icon.png') %>">
+			</button>
+		</div>
+
+	</div>
+<% } %>
+

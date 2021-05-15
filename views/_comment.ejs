@@ -1,27 +1,31 @@
 <li id="comment-<%= comment._id %>">
     <p>
-        <% if (locals.user && locals.user.id == comment.user){ %>
+        <% if (locals.user && locals.user.id == comment.user || locals.user && locals.user.id==post.user._id ){ %>
         
         <small>
-            <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>">Delete</a>
+            <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>" style="text-decoration:none">
+                <!-- Delete -->
+                <img src="<%= assetPath('images/delete.png') %>" style="width:20px;height:20px;cursor:pointer;position: relative;top: 3px;">
+            </a>
         </small>
         <% } %>
-
+        <span><img src="<%=comment.avatar%>" class="post-avatar"></span>
         <%= comment.content %>
         <br>
-        <small>
+        <!-- <small>
            <span>- </span>
             <%= comment.name %>
-        </small>
+        </small> -->
+        <!-- <br> -->
         <!-- CHANGE :: display the likes of this comment, if the user is logged in, then show the link to toggle likes, else, just show the count -->
         <!-- study about the data attribute -->
         <small>
             <% if (locals.user){ %>
-                <a class="toggle-like-button" data-likes="<%= comment.likes.length %>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment">
-                        <%= comment.likes.length %> Likes
+                <a class="toggle-like-button" data-likes="<%= comment.likes.length %>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment" style="color:white;text-decoration: none;">
+                      <span> <img src="<%= assetPath('images/like.png') %>" style="width:25px;height:25px;position: relative;top: 7px;"> </span>  <%= comment.likes.length %> Likes
                 </a>
             <% }else{ %>
-                <%= comment.likes.length %> Likes
+                <span onclick="pageRedirect()"> <img src="<%= assetPath('images/like.png') %>" style="width:25px;height:25px;position: relative;top: 7px;cursor: pointer;"> </span>  <%= comment.likes.length %> Likes
             <% } %>
         </small>
 

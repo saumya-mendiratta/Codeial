@@ -1,19 +1,22 @@
-<link rel="stylesheet" href="/css/user_profile.css">
+<link rel="stylesheet" href="<%= assetPath('css/user_profile.css') %>">
+<section id="user-profile">
 <h1>
     Codeial / Profile Page
 </h1>
 
-<img src="<%=user.avatar %>" alt="<%= user.name %>" width="100">
+<img src="<%=profile_user.avatar %>" alt="<%= user.name %>" width="150" height="150" style="border-radius: 50%;">
+<br><br>
 
 <% if(user.id == profile_user.id){ %>
-
+<h4>Update details</h4>
  <!-- ----If user matches show the form---- -->
-<form action="/users/update/<%= profile_user.id %>" enctype="multipart/form-data" method="POST">
-    <input type="text" name="name" placeholder="Your name" value="<%= profile_user.name %>" required>
+<form action="/users/update/<%= profile_user.id %>" enctype="multipart/form-data" method="POST" id="change-details">
+     <input type="text" name="name" placeholder="Your name" value="<%= profile_user.name %>" required>
     <input type="email" name="email" placeholder="Your email" value="<%= profile_user.email %>" required>
 
+    <label for="file" id="update-avatar">Change Avatar :</label><br><br>
     <input type="file" name="avatar" placeholder="Profile Picture">
-    <input type="submit" value="Update">
+    <input type="submit" value="Update" class='update-button'>
 
 </form>
 
@@ -31,3 +34,5 @@
 <%}%>
 
 <% } %>
+
+</section>

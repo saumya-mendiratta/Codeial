@@ -1,10 +1,10 @@
 // ---Taken these lines from mongoose documentation--
-
+const env = require('./environment');
 // Require the Library
 const mongoose = require ('mongoose');
 
 //Connect to DB
-mongoose.connect('mongodb://localhost/codeial_development', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(`mongodb://localhost/${env.db}`, {useNewUrlParser: true, useUnifiedTopology: true});
 
 //Acquire the connection (to check if it is succesful)
 const db = mongoose.connection;

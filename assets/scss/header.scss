@@ -75,12 +75,9 @@ body {
         }
       }
       &:hover {
-        background: #EC4138;
-        border: 2px solid #F05749;
-        border-right: 2px solid #E02A21;
-        border-bottom: 2px solid #E02A21;
+        background: lightgray;
         a {
-          color: #F9F8FD;
+          color: black;
         }
         ul {
           visibility: visible;
@@ -102,6 +99,23 @@ body {
     position:absolute;
     left: 29px;
     top:7px;
+  }
+  
+  .user-image{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 219px;
+    top: 7px;
+    border-radius: 50%;
+  }
+
+  .logged-out-user-image{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 296px;
+    top: 7px;
   }
 
   @keyframes slide-in {

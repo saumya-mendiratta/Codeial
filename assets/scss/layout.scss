@@ -1,22 +1,54 @@
-
-body{
-    h1,h2,h3,h4,h5,h6,p,li {
-        color: white;
+html{
+        /* Let's get this party started */
+    ::-webkit-scrollbar {
+        width: 12px;
     }
-section{
-    height:100%;
-
-  main{
-    // margin:50px;
-     text-align: center;
-
-    #layout-main{
-        height: 100%;
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
     }
-
-    li{
-        list-style: none;
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #979899; 
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
     }
-}
-}
-}
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background: #979899; 
+    }
+    
+            body{
+                overflow-y: scroll;
+                h1,h2,h3,h4,h5,h6,p,li {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                }
+                input:focus, textarea:focus, select:focus{
+                    outline: none;
+                }
+            section{
+                height:100%;
+
+            main{
+                // margin:50px;
+                text-align: center;
+                //  height:80vh;
+
+                #layout-main{
+                    height: 100%;
+                }
+
+                li{
+                    list-style: none;
+                }
+            }
+            }
+
+
+            }
+ }

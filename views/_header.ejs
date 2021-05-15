@@ -1,26 +1,6 @@
-<link rel="stylesheet" href="/css/header.css">
 
 <header> 
-    <!-- Page Header -->
-
-    <!-- <ul>
-        <% if(locals.user){ %>
-            <li>
-                <a href="/users/profile">  <%= user.name %> </a>
-             </li>
-
-            <li>
-                <a href="/users/sign-out"> Sign Out </a>
-            </li>
-        <% } else{ %>
-            <li>
-                <a href="/users/sign-in"> Login/Sign-Up </a>
-            </li>
-             <li>
-                <a href="/users/sign-up"> Sign Up </a>
-            </li>
-        <% } %>
-    </ul> -->
+  
 
    <div class="header">
     <% if(locals.user){ %>
@@ -30,21 +10,27 @@
              <div class="nav-flex">
               <li>
                   <a href="/">
-                    <span><img src="/images/c.png" class="c-image"> </span>
+                    <span><img src="<%= assetPath('images/c.png') %>" class="c-image"> </span>
                     <span style="padding-left: 26px;">Codeial</span>
                 </a>
                 </li>
             </div>
 
             <div class="nav-flex">
-              <li>
-                <a href="/users/profile/<%= user.id %>">  <%= user.name %> </a>
+                <li>
+                    <a href="/"> Home  </a>
+                 </li>
+              <li >
+                <a href="/users/profile/<%= user.id %>" >
+                     <span> <img src=" <%=locals.user.avatar  %>" class="user-image"> </span> 
+                     <span style="padding-left: 26px;"><%= user.name %></span>
+                     </a>
              </li>
     
              <li>
                 <a href="/users/sign-out"> Sign Out </a>
             </li>
-        </div>
+           </div>
 
             </ul>
           </nav>
@@ -56,14 +42,28 @@
         <div class="header">
         <nav>
             <ul>
-                <li>
-                <a href="/">
-                    <span><img src="/images/c.png" class="c-image"> </span>
-                    <span style="padding-left: 26px;">Codeial</span>
-                </a>
-            </li>
-             
-              <li><a href="/users/sign-in">Login / Sign Up</a></li>
+                <div class="nav-flex">
+                    <li>
+                        <a href="/">
+                          <span><img src="<%= assetPath('images/c.png') %>" class="c-image"> </span>
+                          <span style="padding-left: 26px;">Codeial</span>
+                      </a>
+                      </li>
+                  </div>
+
+                  <div class="nav-flex">
+                    <li>
+                        <a href="/"> Home  </a>
+                     </li>
+                     <li >
+                        <a href="/users/sign-in" >
+                             <span> <img src="<%= assetPath('images/user.png') %>" class="logged-out-user-image"> </span> 
+                             <span style="padding-left: 26px;">Profile</span>
+                             </a>
+                     </li>
+                     <li><a href="/users/sign-in">Login / Sign Up</a></li>
+
+                 </div>
             </ul>
           </nav>
     </div>

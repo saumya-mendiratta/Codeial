@@ -1,0 +1,22 @@
+{
+  "css/chatbox.css": "css/chatbox-c2383de4c0.css",
+  "css/footer.css": "css/footer-67865e3d86.css",
+  "css/header.css": "css/header-4faa9d2f71.css",
+  "css/home.css": "css/home-9ec752a1aa.css",
+  "css/layout.css": "css/layout-4c21863efc.css",
+  "css/login.css": "css/login-651570ae02.css",
+  "css/user_profile.css": "css/user_profile-fe8175166e.css",
+  "images/c.png": "images/c-af2c611fda.png",
+  "images/close.png": "images/close-613eece88e.png",
+  "images/delete.png": "images/delete-b186df3d4c.png",
+  "images/like.png": "images/like-4113758d1a.png",
+  "images/login-bg.jpg": "images/login-bg-ed9faab979.jpg",
+  "images/send-icon.png": "images/send-icon-8365c64c30.png",
+  "images/user.png": "images/user-a50ee50d71.png",
+  "js/chat_engine.js": "js/chat_engine-d32215fc79.js",
+  "js/home_post_comments.js": "js/home_post_comments-ae55f7f14a.js",
+  "js/home_posts.js": "js/home_posts-f459868d3e.js",
+  "js/login.js": "js/login-77c8a69f9e.js",
+  "js/pop-up-chat.js": "js/pop-up-chat-d715cd5d10.js",
+  "js/toggle_likes.js": "js/toggle_likes-7aadc2ba04.js"
+}

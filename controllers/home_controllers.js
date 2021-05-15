@@ -22,7 +22,7 @@ try{
             populate: {
                 path: 'likes'
             }
-        }).populate('comments')
+            }).populate('comments')
         .populate('likes');
 
     //To display all users

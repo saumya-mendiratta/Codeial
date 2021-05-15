@@ -1,3 +1,23 @@
-<footer>
-    Page Footer
+<footer id="layout-footer">
+    <div>
+        <p>
+            &#169; Codeial . All Rights Reserved
+        </p>
+    </div>
+
+    <div>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                &nbsp;&nbsp;&nbsp;
+                <li>
+                   <% if(locals.user) {%>
+                    <a href="/users/profile/<%=locals.user._id %>">Profile</a>
+                    <% }%>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </footer>

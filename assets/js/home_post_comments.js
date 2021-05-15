@@ -23,6 +23,7 @@ class PostComments{
 
     createComment(postId){
         let pSelf = this;
+
         this.newCommentForm.submit(function(e){
             e.preventDefault();
             let self = this;
@@ -64,18 +65,18 @@ class PostComments{
                         <p>
                             
                             <small>
-                                <a class="delete-comment-button" href="/comments/destroy/${comment._id}">Delete</a>
+                                <a class="delete-comment-button" href="/comments/destroy/${comment._id}"  style="text-decoration:none">
+                                <img src="/images/delete.png" style="width:20px;height:20px;cursor:pointer;position: relative;top: 3px;">
+                                </a>
                             </small>
-                            
+                            <span><img src="${ comment.avatar }" class="post-avatar"></span>
                             ${comment.content}
                             <br>
-                            <small>
-                            <span>- </span> ${comment.name}
-                            </small>
+                           
                             <small>
                             
-                                <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${comment._id}&type=Comment">
-                                    0 Likes
+                                <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${comment._id}&type=Comment" style="color:white;text-decoration: none;">
+                                   <span> <img src="/images/like.png" style="width:25px;height:25px;position: relative;top: 7px;"> </span>  <span>0 Likes</span>
                                 </a>
                             
                             </small>

@@ -16,14 +16,15 @@ module.exports.create = async function(req, res){
                 content: req.body.content,
                 post: req.body.post,
                 user: req.user._id, 
-                name:req.user.name
+                name:req.user.name,
+                avatar:req.user.avatar
             });
             
               //Add comment
               post.comments.push(comment);
               post.save();
  
-            comment= await comment.populate('user' , 'name email').execPopulate();
+            comment= await comment.populate('user' , 'name email ').execPopulate();
             // commentsMailer.newComment(comment);
            let job = queue.create('emails', comment).save(function(err)
             {  
