@@ -58,7 +58,7 @@ if(env.name== 'development'){
 
 
 //Used for parsing
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded());
 
 //To use coookies
 app.use(cookieParser());
