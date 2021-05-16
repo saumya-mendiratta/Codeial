@@ -3,9 +3,14 @@
 
 
 <h3>A Social media Web Application with CRUD operations</h3>
-<h4>Sample Screesnshot :</h4>
 
-<img src="https://github.com/saumya-mendiratta/Codeial/blob/main/assets/images/codeial.gif?raw=true">
+<h2> Live Preview : http://3.22.183.158:8000/ </h2>
+
+```sh
+For Testing :
+Email : test@gmail.com
+Password: 123
+```
 
 
 ## Features
