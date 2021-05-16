@@ -10,5 +10,5 @@ function openForm() {
 
   function pageRedirect() {
     console.log("redirect script");
-    window.location.href = "http://localhost:8000/users/sign-in";
+    window.location.href = "http://3.22.183.158:8000/users/sign-in";
   } 
