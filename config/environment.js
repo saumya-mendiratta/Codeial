@@ -11,31 +11,6 @@ const accessLogStream = rfs.createStream('access.log', {
   path: logDirectory
 });
 
-const development = {
-    name: 'development',
-    asset_path: './assets',
-    session_cookie_key: 'Blasomething',
-    db: 'codeial_development', 
-    smtp:{
-            service : 'gmail' , 
-            host: "smtp.gmail.com",
-            port: 587,
-            secure: false, // true for 465, false for other ports
-            auth: {
-              user: 'saya.mendiratta', // generated ethereal user
-              pass: 'Wantedman28', // generated ethereal password
-            }
-          }, 
-    google_client_id: '155138901061-84j3ucidmdnvu43k09vcf06arnlvg68t.apps.googleusercontent.com', 
-    google_client_secret: 'uPi6EM8HNuKbOFIJyn_-3bVg', 
-    google_call_back_url: "http://codeial.com/users/auth/google/callback",
-    jwt_secret: 'codeial',
-    morgan: {
-      mode: 'dev',
-      options: {stream: accessLogStream}
-  }
-    
-}
 
 // require('dotenv').config();
 
