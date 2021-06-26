@@ -97,7 +97,7 @@ app.use(session({
     store: MongoStore.create(
         { 
             // mongooseConnection : db,
-            mongoUrl: 'mongodb://http://3.22.209.13/codeial_development',
+            mongoUrl: 'mongodb://localhost/codeial_development',
             autoRemove:'disabled'     
          } ,
          function(err){
