@@ -78,7 +78,7 @@ Some comments in the source code are course notes and therefore might not seem n
 * [SCSS](https://sass-lang.com/)
 * [ejs](http://ejs.co/)
 
-### Back-end
+### Back-End
 * [node.js](https://nodejs.org/en/)
 * [express](https://expressjs.com/)
 * [mongoDB](https://www.mongodb.com/)
