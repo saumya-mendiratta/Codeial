@@ -4,7 +4,7 @@
 
 <h3>A Social media Web Application with CRUD operations</h3>
 
-<h2> Live Preview : http://3.22.183.158:8000/ </h2>
+<h2> Live Preview : http://3.22.209.13:8000 </h2>
 
 ```sh
 For Testing :
@@ -19,7 +19,7 @@ Password: 123
   
   * User login with username and password
 
-* Authorization:
+* Authorization :
 
   * One cannot manage posts and view user profile without being authenticated
 
@@ -73,12 +73,12 @@ Some comments in the source code are course notes and therefore might not seem n
 ## Tools and Packages used
 <img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" width=40> <img src="https://miro.medium.com/max/800/0*g3ns8QALNBBH7CBA." width=100> <img src="https://t1.daumcdn.net/cfile/tistory/226E113C5660EF950B" width=150> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" width=150> <img src="https://cdn.iconscout.com/icon/free/png-512/mongodb-226029.png" width=150> <img src="https://transang.me/content/images/2019/11/ExpressJS.png" width=150><img src="https://vegibit.com/wp-content/uploads/2018/07/JSON-Web-Token-Authentication-With-Node.png" width=150> <img src="https://camo.githubusercontent.com/f1e23b7f0efb3e6acf2b5a11c0379e5c51cc911b/68747470733a2f2f7261776769742e636f6d2f736173732f6e6f64652d736173732f6d61737465722f6d656469612f6c6f676f2e737667" width=110> <img src="https://i1.wp.com/community.nodemailer.com/wp-content/uploads/2015/10/n2-2.png?fit=422%2C360&ssl=1" width=110> <img src="https://miro.medium.com/max/400/1*YI1tt4kGzvea-v4dAhZ90w.png" width=110>
 
-### Front-end
+### Front-End
 * HTML, CSS, JavaScript, jQuery
 * [SCSS](https://sass-lang.com/)
 * [ejs](http://ejs.co/)
 
-### Back-end
+### Back-End
 * [node.js](https://nodejs.org/en/)
 * [express](https://expressjs.com/)
 * [mongoDB](https://www.mongodb.com/)
