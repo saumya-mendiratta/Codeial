@@ -50,7 +50,8 @@ Password: 123
   * Mailer:
      * User gets mail on the specified email id upon commenting
      
- ## All the functionalities are added dynamically using `AJAX` so that the page does not reload upon every request  
+ ## • All the functionalities are added dynamically using `AJAX` so that the page does not reload upon every request
+ ## • No CSS framework used , complete styling of the page is done by my own 
 
 <br>
 
