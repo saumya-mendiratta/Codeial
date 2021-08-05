@@ -2,7 +2,7 @@
 <img src="https://img.shields.io/github/issues/saumya-mendiratta/Codeial"> <img src="https://img.shields.io/badge/Dev-InProgress-orange">
 
 
-<h3> A Social media Web Application with CRUD operations</h3>
+<h3>A Social media Web Application with CRUD operations</h3>
 
 <h2> Live Preview : http://3.22.209.13:8000 </h2>
 
