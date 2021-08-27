@@ -4,7 +4,7 @@
 
 <h3>A Social media Web Application with CRUD operations</h3>
 
-<h2> Live Preview: http://3.22.209.13:8000 </h2>
+<h2> Live Preview : http://3.22.209.13:8000 </h2>
 
 ```sh
 For Testing :
