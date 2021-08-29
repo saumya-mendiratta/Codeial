@@ -27,7 +27,7 @@ Password: 123
 
 * Manage User with basic functionalities:
 
-  * Create, edit and delete posts and comments
+  * Create and delete posts and comments
 
   * Upload User avatar
 
